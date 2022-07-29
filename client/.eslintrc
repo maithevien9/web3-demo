@@ -1,0 +1,68 @@
+{
+  "extends": [
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "react",
+    "import",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "semi": [
+      2,
+      "always"
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "jsx-quotes": [
+      2,
+      "prefer-single"
+    ],
+    "import/imports-first": [
+      2,
+      "absolute-first"
+    ],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "no-console": 1,
+    "react/jsx-max-props-per-line": [
+      2,
+      {
+        "maximum": 1,
+        "when": "multiline"
+      }
+    ],
+    "react/jsx-closing-bracket-location": 2,
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/no-empty-interface": 0
+  }
+}
