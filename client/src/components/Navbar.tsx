@@ -12,7 +12,7 @@ const NavBarItem = ({
   classprops: string;
 }) => <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>;
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
